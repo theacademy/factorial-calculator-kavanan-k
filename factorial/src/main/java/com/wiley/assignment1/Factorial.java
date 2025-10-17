@@ -34,15 +34,17 @@ public class Factorial {
 		*/
 
 		//YOUR CODE STARTS HERE
-
+        //Read and ensure the input is an integer between 1 and 10
          try {
              num = scanner.nextInt();
              if (1 <= num  && num <= 10) {
                  return num;
              }
              else
+                 //Forcibly throw an exception to trigger the catch statement, rather than print the whole statement again.
                  throw new IllegalArgumentException();
          }
+         //Handle invalid inputs
          catch(Exception e) {
              this.printStream.print("Invalid entry. Please enter an integer between 1 and 10, inclusive.");
              return -1;
@@ -66,6 +68,7 @@ public class Factorial {
 		 
 		int result = 1;
 		//YOUR CODE STARTS HERE
+         //Calculate the factorial of the given input with a loop.
          for (int i = 2; i <= num; i++){
              result = result * i;
          }
