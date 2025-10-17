@@ -34,7 +34,7 @@ public class Factorial {
 		*/
 
 		//YOUR CODE STARTS HERE
-        //Read and ensure the input is an integer between 1 and 10
+        //Read and ensure the input is an integer between 1 and 10.
          try {
              num = scanner.nextInt();
              if (1 <= num  && num <= 10) {
